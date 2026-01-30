@@ -35,14 +35,10 @@
     .section-title { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; }
     .section-subtitle { color: #94a3b8; font-size: 1.1rem; max-width: 700px; }
     .tech-stack-section { padding: 60px 0; border-bottom: 1px solid #1e293b; }
-    .tech-category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 3rem; }
-    .tech-category-box { background: #2d3748; border: 1px solid #4a5568; border-radius: 12px; padding: 2.5rem; transition: all 0.3s ease; }
-    .tech-category-box:hover { border-color: #38bdf8; transform: translateY(-10px); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.25); background: #374151; }
-    .tech-category-title { color: #38bdf8; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; }
-    .tech-logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; align-items: center; justify-items: center; }
-    .tech-logo-item { width: 160px; height: 120px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 12px; padding: 24px; transition: all 0.3s ease; border: 2px solid #e2e8f0; }
-    .tech-logo-item:hover { border-color: #38bdf8; transform: translateY(-10px); box-shadow: 0 15px 35px rgba(56, 189, 248, 0.3); background: #f8fafc; }
-    .tech-logo-item img { max-width: 100%; max-height: 100%; object-fit: contain; filter: none; }
+    .tech-logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 2rem; align-items: center; justify-items: center; margin-top: 3rem; }
+    .tech-logo-item { width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 12px; padding: 20px; transition: all 0.3s ease; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+    .tech-logo-item:hover { border-color: #38bdf8; transform: translateY(-10px); box-shadow: 0 12px 30px rgba(56, 189, 248, 0.4), 0 0 20px rgba(56, 189, 248, 0.3); }
+    .tech-logo-item img { max-width: 100px; max-height: 100px; object-fit: contain; }
     .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
     .tool-category { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s; }
     .tool-category:hover { border-color: #38bdf8; transform: translateY(-5px); }
@@ -98,13 +94,12 @@
   <header>
     <div class="container">
       <nav>
-        <a href="#" class="logo">JV</a>
+        <a href="#" class="logo">Jefferson Villa</a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#tech-stack">Tech Stack</a></li>
+          <li><a href="#tools">Tools</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#ai-influencer">AI Influencer</a></li>
-          <li><a href="#design">Design Work</a></li>
+          <li><a href="#design">Design</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -112,107 +107,63 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="about">
     <div class="container">
       <div class="hero-content">
-        <span class="hero-tag">Executive & Administrative Professional</span>
-        <h1>Transforming Operations Into <span>Profitable Solutions</span></h1>
-        <p>I drive operational excellence through strategic automation, compliance management, and digital transformation—delivering measurable results including 30% cost reductions, 100% audit compliance, and streamlined workflows across international markets.</p>
+        <div class="hero-tag">🚀 Executive & Administrative Professional</div>
+        <h1>Transforming Operations with <span>AI & Automation</span></h1>
+        <p>Driving operational excellence across 4 countries with proven expertise in HRIS, compliance, and digital transformation. Delivered 30% cost reductions and 100% audit compliance through strategic automation and process innovation.</p>
         <div class="cta-group">
-          <a href="#projects" class="btn btn-primary">View My Work →</a>
-          <a href="#ai-influencer" class="btn btn-secondary">View AI Influencer Samples</a>
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="stats">
-    <div class="container" style="display: contents;">
-      <div class="stat-item"><div class="stat-number">30%</div><div class="stat-label">Cost Reduction Achieved</div></div>
-      <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Audit Compliance Rate</div></div>
-      <div class="stat-item"><div class="stat-number">25%</div><div class="stat-label">Faster Hiring Process</div></div>
-      <div class="stat-item"><div class="stat-number">4</div><div class="stat-label">Countries Managed</div></div>
+  <div class="container">
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-number">30%</div>
+        <div class="stat-label">Cost Reduction Achieved</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Audit Compliance</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">25%</div>
+        <div class="stat-label">Faster Hiring Process</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Countries Managed</div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="tech-stack-section" id="tech-stack">
+  <section class="tech-stack-section" id="tools">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Tech Stack I Use</h2>
-        <p class="section-subtitle">Leveraging cutting-edge tools and platforms to deliver innovative solutions across AI, design, development, and collaboration.</p>
+        <p class="section-subtitle">Leveraging cutting-edge tools and platforms to drive operational excellence and digital transformation.</p>
       </div>
-      <div class="tech-category-grid">
-        <div class="tech-category-box">
-          <h3 class="tech-category-title">🤖 AI & Automation Tools</h3>
-          <div class="tech-logos">
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/e6950914-4e37-4b60-9e60-534edbb64fe5.png" alt="Abacus.AI" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/7c6b8ba9-0ec7-4a92-99ff-c73a20d8ef86.png" alt="Grok AI" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/d98f0e2e-5c0e-4a80-afc9-dd06df662745.png" alt="ElevenLabs" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/94cc5f2b-00cd-4ca7-b570-18cb126b586c.png" alt="Higgsfield" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/a91282f3-a77f-423e-b72d-d2ca0b686a9e.png" alt="ChatGPT" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/19b24967-709e-4548-887d-ba694263651c.png" alt="HeyGen" /></div>
-          </div>
-        </div>
-        <div class="tech-category-box">
-          <h3 class="tech-category-title">🎨 Design & Content Creation</h3>
-          <div class="tech-logos">
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/f7513f1a-547e-4660-8947-d7c979c7c2f7.png" alt="Midjourney" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/b969ae9a-71b0-43c5-9c75-ad3d2ac47c70.png" alt="CapCut" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/4946d957-2d96-49e4-8825-183e409b432f.png" alt="Canva" /></div>
-          </div>
-        </div>
-        <div class="tech-category-box">
-          <h3 class="tech-category-title">💼 Business Platforms</h3>
-          <div class="tech-logos">
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/a8227d64-6db5-4e3b-b6c3-7c4d360eeb35.png" alt="Zoho" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/d333afac-9b3e-4a68-bd16-2ca72183b50d.png" alt="Google Workspace" /></div>
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/ecca7d1a-72fe-407d-a423-02626e66acfc.png" alt="Shopify" /></div>
-          </div>
-        </div>
-        <div class="tech-category-box">
-          <h3 class="tech-category-title">💻 Development & CMS</h3>
-          <div class="tech-logos">
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/5d545331-aa50-4f79-a736-43d665c6233f.png" alt="WordPress" /></div>
-          </div>
-        </div>
-        <div class="tech-category-box">
-          <h3 class="tech-category-title">💬 Communication & Collaboration</h3>
-          <div class="tech-logos">
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/dff8397f-2d08-4a7c-9866-653cb0a4ba93.png" alt="Slack" /></div>
-          </div>
-        </div>
-        <div class="tech-category-box">
-          <h3 class="tech-category-title">📱 Social Media & Marketing</h3>
-          <div class="tech-logos">
-            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/56f082b3-59eb-48ff-aa6a-c859650a56a3.png" alt="Social Media Platforms" /></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">What I Bring to the Table</h2>
-        <p class="section-subtitle">A proven track record of streamlining operations, ensuring compliance, and leveraging cutting-edge technology to drive business growth and sustainability across diverse industries.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="tools" style="padding-top: 0;">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Tools & Technologies</h2>
-        <p class="section-subtitle">Leveraging modern platforms and AI-powered solutions to optimize workflows and enhance digital transformation.</p>
-      </div>
-      <div class="tools-grid">
-        <div class="tool-category"><h3>🤖 AI & Automation</h3><div class="tool-list"><span class="tool-tag">OpenAI</span><span class="tool-tag">HeyGen</span><span class="tool-tag">Gemini AI</span><span class="tool-tag">Kling</span><span class="tool-tag">MidJourney</span></div></div>
-        <div class="tool-category"><h3>💼 Business Platforms</h3><div class="tool-list"><span class="tool-tag">Zoho People</span><span class="tool-tag">Zoho CRM</span><span class="tool-tag">Zoho Books</span><span class="tool-tag">Zoho Projects</span><span class="tool-tag">Zoho Cliq</span></div></div>
-        <div class="tool-category"><h3>🛒 E-Commerce</h3><div class="tool-list"><span class="tool-tag">Lazada</span><span class="tool-tag">Shopee</span><span class="tool-tag">TikTok Shop</span></div></div>
-        <div class="tool-category"><h3>⚙️ Systems & ERP</h3><div class="tool-list"><span class="tool-tag">HRMS-E</span><span class="tool-tag">ERP Systems</span><span class="tool-tag">ATS (Custom)</span><span class="tool-tag">Slack</span></div></div>
-        <div class="tool-category"><h3>📊 Management</h3><div class="tool-list"><span class="tool-tag">Project Management</span><span class="tool-tag">Financial Planning</span><span class="tool-tag">Payroll Systems</span><span class="tool-tag">Asset Management</span></div></div>
-        <div class="tool-category"><h3>📋 Compliance & HR</h3><div class="tool-list"><span class="tool-tag">Regulatory Compliance</span><span class="tool-tag">Recruitment</span><span class="tool-tag">Training Programs</span><span class="tool-tag">Safety Standards</span></div></div>
+      <div class="tech-logos">
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/7ea99390-5809-4ed6-b06a-956c99e9fea3.png" alt="ChatGPT" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/215e5f2e-a5c2-40a4-8910-379c0369576a.png" alt="Grok" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/15031d32-0b67-40e1-a522-3941b6a3f5c2.png" alt="HeyGen" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/d1ab92d7-5eb4-4301-82e8-5a13b0753520.png" alt="MidJourney" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/34e17a44-a752-4c70-bd90-6fa35313930e.png" alt="Abacus AI" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/59ae8b0e-c362-44ef-8c98-656d4318f89b.png" alt="ElevenLabs" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/f20806a4-c10b-4f7e-8c53-ad9a7d26f259.png" alt="Higgsfield AI" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/856d6b8b-faf8-4a8c-9c11-9ab0932a8d95.png" alt="Zoho" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/3330f807-3798-4200-ba94-aeecec47f154.png" alt="Google Workspace" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/de79b43a-1808-4f5e-84c1-08e7e8e0a07b.png" alt="Slack" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/8a6bb0eb-bda9-4612-ac20-38048c2531d4.png" alt="Shopify" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/df6dbfc0-6657-4c02-99db-5a2e0485eadd.png" alt="WordPress" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/b17974c8-b1bc-421f-a335-c42a9b9913b2.png" alt="Canva" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/934864b0-1f69-4fa1-9b7a-7c5de0c20715.png" alt="CapCut" /></div>
+        <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/8b72a35d-13d8-4291-bb30-ad1a6288d9b0.png" alt="Social Media" /></div>
       </div>
     </div>
   </section>
@@ -220,71 +171,103 @@
   <section class="section" id="projects">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Key Projects & Impact</h2>
-        <p class="section-subtitle">Real-world solutions that delivered measurable business outcomes.</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world implementations delivering measurable business impact through technology and process innovation.</p>
       </div>
       <div class="projects-grid">
         <div class="project-card">
-          <a href="https://careers.sgecentre.com/jobs/Careers" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-            <div class="project-image-container"><img src="https://cdn.abacus.ai/images/e8591fe5-7eb7-4c45-818b-4ddd5c65bf2a.png" alt="Custom ATS Development" class="project-screenshot" /></div>
+          <a href="https://careers.sgecentre.com/jobs/Careers" target="_blank" style="text-decoration: none;">
+            <div class="project-image-container">
+              <img src="https://cdn.abacus.ai/images/460486e1-b7be-4ab0-af73-6dcfe0fdbd84.png" alt="Custom ATS Development" class="project-screenshot" />
+            </div>
           </a>
           <div class="project-content">
             <h3>Custom ATS Development</h3>
-            <div class="project-company">SG Ecommerce Centre</div>
-            <p>Built and launched a customized Applicant Tracking System from the ground up, including a public-facing careers portal for candidates.</p>
-            <a href="https://careers.sgecentre.com/jobs/Careers" target="_blank" rel="noopener noreferrer" class="project-link">View Live Careers Portal →</a>
+            <p class="project-company">SGE Centre</p>
+            <p>Built a custom Applicant Tracking System from scratch using Abacus AI, streamlining recruitment workflows and reducing administrative overhead by 40%.</p>
+            <a href="https://careers.sgecentre.com/jobs/Careers" target="_blank" class="project-link">View Live Careers Portal →</a>
           </div>
-          <div class="project-metrics"><span class="metric">25% Faster Hiring</span><span class="metric">40% Less Admin Work</span><span class="metric">100% Adoption Rate</span></div>
+          <div class="project-metrics">
+            <span class="metric">25% Faster Hiring</span>
+            <span class="metric">40% Less Admin Work</span>
+            <span class="metric">Custom Built</span>
+          </div>
         </div>
 
         <div class="project-card">
-          <a href="https://hris.abacusai.app/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
-            <div class="project-image-container"><img src="https://cdn.abacus.ai/images/d1cdb4c5-844f-4dcb-ba4d-d02c51951976.png" alt="HRIS Dashboard" class="project-screenshot" /></div>
+          <a href="https://hris.abacusai.app/" target="_blank" style="text-decoration: none;">
+            <div class="project-image-container">
+              <img src="https://cdn.abacus.ai/images/c49dffdf-8ce2-48d7-b2c3-9653c2e9b830.png" alt="HRIS Implementation" class="project-screenshot" />
+            </div>
           </a>
           <div class="project-content">
             <h3>HRIS Implementation</h3>
-            <div class="project-company">Conversion Hub Pte. Ltd.</div>
-            <p>Implemented and administered a cloud-based HRIS, automating employee records, attendance, payroll, and leave management with clean dashboards and audit-ready data.</p>
-            <a href="https://hris.abacusai.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Live HRIS Portal →</a>
+            <p class="project-company">Multi-Country Operations</p>
+            <p>Deployed comprehensive HRIS across 4 countries (PH, SG, TH, MY), achieving 100% compliance and 30% cost reduction through process automation.</p>
+            <a href="https://hris.abacusai.app/" target="_blank" class="project-link">View Live HRIS Portal →</a>
           </div>
-          <div class="project-metrics"><span class="metric">Zero Payroll Errors</span><span class="metric">100% Compliance</span><span class="metric">Real-time HR Analytics</span></div>
+          <div class="project-metrics">
+            <span class="metric">4 Countries</span>
+            <span class="metric">100% Compliance</span>
+            <span class="metric">30% Cost Savings</span>
+          </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image-container"><img src="https://cdn.abacus.ai/images/31893abc-13ba-40e0-8f10-94e5acfa0125.png" alt="Digital Onboarding Platform" class="project-screenshot" /></div>
+          <div class="project-image-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; padding: 0;">
+            <img src="https://cdn.abacus.ai/images/9d4ae58e-aa9a-4752-80b3-d532f6585850.png" alt="Digital Onboarding Platform - Screen 1" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
+            <img src="https://cdn.abacus.ai/images/bea3b718-eb81-4a31-8e71-dcfa49fc3af2.png" alt="Digital Onboarding Platform - Screen 2" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
+            <img src="https://cdn.abacus.ai/images/ede4b25c-ed16-4749-b23f-7afaab0cf730.png" alt="Digital Onboarding Platform - Screen 3" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
+          </div>
           <div class="project-content">
             <h3>Digital Onboarding Platform</h3>
-            <div class="project-company">SG Ecommerce Centre</div>
-            <p>Designed a full digital onboarding experience – from welcome screens and HR contact, to policy acknowledgements and video-based orientation modules. New hires complete everything online before day one.</p>
+            <p class="project-company">Regional Training Initiative</p>
+            <p>Designed and launched a digital onboarding system that reduced training costs by 20% and achieved 90% employee satisfaction scores.</p>
           </div>
-          <div class="project-metrics"><span class="metric">20% Cost Savings</span><span class="metric">30-Day Productivity</span><span class="metric">90% Satisfaction</span></div>
+          <div class="project-metrics">
+            <span class="metric">20% Cost Savings</span>
+            <span class="metric">90% Satisfaction</span>
+            <span class="metric">Digital First</span>
+          </div>
         </div>
 
         <div class="project-card">
           <div class="project-content">
-            <h3>International Compliance</h3>
-            <div class="project-company">SG Ecommerce Centre</div>
-            <p>Led business compliance efforts across 4 countries, ensuring full adherence to international regulations and securing market access.</p>
+            <h3>International Compliance Management</h3>
+            <p class="project-company">Regional Operations</p>
+            <p>Established compliance frameworks across Philippines, Singapore, Thailand, and Malaysia, maintaining 100% audit success rate.</p>
           </div>
-          <div class="project-metrics"><span class="metric">4 Countries</span><span class="metric">100% Compliance</span><span class="metric">Zero Violations</span></div>
+          <div class="project-metrics">
+            <span class="metric">4 Countries</span>
+            <span class="metric">100% Compliance</span>
+            <span class="metric">Zero Violations</span>
+          </div>
         </div>
 
         <div class="project-card">
           <div class="project-content">
             <h3>E-Commerce Optimization</h3>
-            <div class="project-company">SG Ecommerce Centre</div>
-            <p>Optimized product listings and strategies across Lazada, Shopee, and TikTok, driving significant revenue growth.</p>
+            <p class="project-company">Shopify & WordPress</p>
+            <p>Optimized e-commerce operations through platform integration and automation, increasing sales efficiency by 15%.</p>
           </div>
-          <div class="project-metrics"><span class="metric">15% Sales Increase</span><span class="metric">3 Platforms</span><span class="metric">6 Months ROI</span></div>
+          <div class="project-metrics">
+            <span class="metric">15% Sales Increase</span>
+            <span class="metric">Multi-Platform</span>
+            <span class="metric">Automated Workflows</span>
+          </div>
         </div>
 
         <div class="project-card">
           <div class="project-content">
             <h3>Asset Recovery Program</h3>
-            <div class="project-company">Wuhan FiberHome International</div>
-            <p>Converted damaged equipment into revenue through strategic asset management and recovery initiatives.</p>
+            <p class="project-company">Corporate Finance</p>
+            <p>Led asset recovery initiative as Corporate Treasurer, achieving 30% ROI through strategic liquidation and reallocation.</p>
           </div>
-          <div class="project-metrics"><span class="metric">30% ROI</span><span class="metric">Zero Audit Findings</span><span class="metric">Regional Leadership</span></div>
+          <div class="project-metrics">
+            <span class="metric">30% ROI</span>
+            <span class="metric">Strategic Recovery</span>
+            <span class="metric">Financial Leadership</span>
+          </div>
         </div>
       </div>
     </div>
@@ -293,10 +276,9 @@
   <section class="section" id="ai-influencer">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">AI Influencer Samples</h2>
-        <p class="section-subtitle">AI-generated video content showcasing product marketing and brand storytelling capabilities.</p>
+        <h2 class="section-title">AI Influencer Marketing</h2>
+        <p class="section-subtitle">Pioneering AI-generated content for health and wellness product promotion with measurable engagement and revenue growth.</p>
       </div>
-
       <div class="influencer-showcase">
         <h3>🚀 HealthSmart Finds – Startup AI Influencer Channel</h3>
         <p>Launched a TikTok channel leveraging AI-generated influencer content to promote health and wellness products. This startup venture is gaining traction with growing engagement and generating commission-based revenue through affiliate partnerships.</p>
@@ -392,6 +374,48 @@
             <p class="design-tagline">Clean, clinical-inspired composition emphasizing texture, capsules, and hand modeling.</p>
           </div>
         </div>
+        <div class="design-card">
+          <img src="https://cdn.abacus.ai/images/681acb15-0f8b-451b-bf19-c9f1abda4391.png" alt="Family Legacy Files - Relationship eBook Campaign" class="design-image" />
+          <div class="design-content">
+            <h3>Relationship eBook Campaign</h3>
+            <p class="design-tagline">Lead generation visual for "The Secret to a Stronger Relationship" with multi-device mockup and clear CTA.</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="https://cdn.abacus.ai/images/7e725bd8-f935-4dbe-96ff-2151ab0f4d07.png" alt="Family Legacy Files - Free eBook Signup" class="design-image" />
+          <div class="design-content">
+            <h3>Free eBook Signup Visual</h3>
+            <p class="design-tagline">Minimalist conversion-focused design with lifestyle photography and direct signup messaging.</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="https://cdn.abacus.ai/images/5107b767-a278-4f4b-9ec8-6f55eef73422.png" alt="Producers Wealth - Financial Success Campaign" class="design-image" />
+          <div class="design-content">
+            <h3>Financial Success Campaign</h3>
+            <p class="design-tagline">Two-panel layout promoting "Get Wealthy For Sure" book with benefit-driven copy and professional branding.</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="https://cdn.abacus.ai/images/bc06278e-f18b-4a82-ab3c-2b22b1b856b2.png" alt="Producers Wealth - 4 Essential Tips Infographic" class="design-image" />
+          <div class="design-content">
+            <h3>4 Essential Tips Infographic</h3>
+            <p class="design-tagline">Educational content design with numbered framework and balanced text-to-visual hierarchy.</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="https://cdn.abacus.ai/images/23fe7d12-2011-40c5-a563-6b62e328e376.png" alt="Producers Wealth - Free Book Offer" class="design-image" />
+          <div class="design-content">
+            <h3>Free Book Offer Visual</h3>
+            <p class="design-tagline">High-conversion landing page design featuring Amazon #1 badge, book stack, and urgency-driven messaging.</p>
+          </div>
+        </div>
+        <div class="design-card">
+          <img src="https://cdn.abacus.ai/images/c47e1be0-da0e-46e2-a656-55d316f12c38.png" alt="PrimeTouch Auto Detailing - Service Menu" class="design-image" />
+          <div class="design-content">
+            <h3>Auto Detailing Service Menu</h3>
+            <p class="design-tagline">Comprehensive pricing layout with vehicle illustrations, tiered packages, and clear add-on options.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -399,14 +423,35 @@
   <section class="section" id="achievements">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Achievements & Leadership</h2>
-        <p class="section-subtitle">Recognized accomplishments and strategic roles in business operations.</p>
+        <h2 class="section-title">Key Achievements</h2>
+        <p class="section-subtitle">Recognition and certifications demonstrating leadership, technical expertise, and commitment to excellence.</p>
       </div>
       <div class="achievements-grid">
-        <div class="achievement-card"><div class="achievement-icon">🏆</div><h3>Regional Leader - South Luzon</h3><p>Appointed as Regional Leader for tools and equipment management, overseeing reports, deliveries, and audits with full compliance.</p></div>
-        <div class="achievement-card"><div class="achievement-icon">💼</div><h3>Corporate Treasurer</h3><p>Served as Corporate Treasurer overseeing cash flow, financial planning, and investment strategies for sustained growth.</p></div>
-        <div class="achievement-card"><div class="achievement-icon">📦</div><h3>Logistics Excellence</h3><p>Achieved 98% on-time deliveries and negotiated contracts reducing logistics costs by 12%.</p></div>
-        <div class="achievement-card"><div class="achievement-icon">📈</div><h3>Operational Strategy</h3><p>Introduced company-wide policies resulting in a 20% boost in workflow efficiency and higher employee satisfaction.</p></div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <h3>Regional Operations Leader</h3>
+          <p>Successfully managed multi-country operations across Philippines, Singapore, Thailand, and Malaysia.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">📚</div>
+          <h3>Certified Trainer</h3>
+          <p>Accredited corporate trainer specializing in digital transformation and process optimization.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">💼</div>
+          <h3>Corporate Treasurer</h3>
+          <p>Led financial operations and asset recovery initiatives with proven ROI improvements.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">📦</div>
+          <h3>Logistics Excellence</h3>
+          <p>Optimized supply chain and logistics operations across multiple business units.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">🎯</div>
+          <h3>Operational Strategy</h3>
+          <p>Developed and executed strategic initiatives resulting in measurable cost savings and efficiency gains.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -415,14 +460,16 @@
     <div class="container">
       <div class="footer-content">
         <h3>Let's Work Together</h3>
-        <p>Ready to transform your operations and drive measurable results? Let's connect.</p>
+        <p>Ready to transform your operations with AI and automation? Let's connect.</p>
         <div class="contact-info">
-          <a href="mailto:jeffersonvilla2022@gmail.com" class="contact-item">📧 jeffersonvilla2022@gmail.com</a>
-          <a href="tel:09430703606" class="contact-item">📱 0943 070 3606</a>
+          <a href="mailto:jefferson.villa@example.com" class="contact-item">📧 jefferson.villa@example.com</a>
+          <a href="tel:+1234567890" class="contact-item">📱 +123 456 7890</a>
           <a href="#" class="contact-item">🌐 Portfolio</a>
         </div>
       </div>
-      <div class="footer-bottom"><p>© 2026 Jefferson L. Villa. Driving operational excellence through innovation.</p></div>
+      <div class="footer-bottom">
+        <p>© 2026 Jefferson Villa. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>
