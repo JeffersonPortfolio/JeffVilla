@@ -34,6 +34,15 @@
     .section-header { margin-bottom: 3rem; }
     .section-title { font-size: 2.5rem; margin-bottom: 1rem; color: #fff; }
     .section-subtitle { color: #94a3b8; font-size: 1.1rem; max-width: 700px; }
+    .tech-stack-section { padding: 60px 0; border-bottom: 1px solid #1e293b; }
+    .tech-category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; margin-top: 3rem; }
+    .tech-category-box { background: #2d3748; border: 1px solid #4a5568; border-radius: 12px; padding: 2.5rem; transition: all 0.3s ease; }
+    .tech-category-box:hover { border-color: #38bdf8; transform: translateY(-10px); box-shadow: 0 20px 40px rgba(56, 189, 248, 0.25); background: #374151; }
+    .tech-category-title { color: #38bdf8; font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; }
+    .tech-logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; align-items: center; justify-items: center; }
+    .tech-logo-item { width: 160px; height: 120px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 12px; padding: 24px; transition: all 0.3s ease; border: 2px solid #e2e8f0; }
+    .tech-logo-item:hover { border-color: #38bdf8; transform: translateY(-10px); box-shadow: 0 15px 35px rgba(56, 189, 248, 0.3); background: #f8fafc; }
+    .tech-logo-item img { max-width: 100%; max-height: 100%; object-fit: contain; filter: none; }
     .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
     .tool-category { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s; }
     .tool-category:hover { border-color: #38bdf8; transform: translateY(-5px); }
@@ -92,7 +101,7 @@
         <a href="#" class="logo">JV</a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#tools">Tools</a></li>
+          <li><a href="#tech-stack">Tech Stack</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#ai-influencer">AI Influencer</a></li>
           <li><a href="#design">Design Work</a></li>
@@ -123,6 +132,62 @@
       <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Audit Compliance Rate</div></div>
       <div class="stat-item"><div class="stat-number">25%</div><div class="stat-label">Faster Hiring Process</div></div>
       <div class="stat-item"><div class="stat-number">4</div><div class="stat-label">Countries Managed</div></div>
+    </div>
+  </section>
+
+  <section class="tech-stack-section" id="tech-stack">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tech Stack I Use</h2>
+        <p class="section-subtitle">Leveraging cutting-edge tools and platforms to deliver innovative solutions across AI, design, development, and collaboration.</p>
+      </div>
+      <div class="tech-category-grid">
+        <div class="tech-category-box">
+          <h3 class="tech-category-title">🤖 AI & Automation Tools</h3>
+          <div class="tech-logos">
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/e6950914-4e37-4b60-9e60-534edbb64fe5.png" alt="Abacus.AI" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/7c6b8ba9-0ec7-4a92-99ff-c73a20d8ef86.png" alt="Grok AI" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/d98f0e2e-5c0e-4a80-afc9-dd06df662745.png" alt="ElevenLabs" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/94cc5f2b-00cd-4ca7-b570-18cb126b586c.png" alt="Higgsfield" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/a91282f3-a77f-423e-b72d-d2ca0b686a9e.png" alt="ChatGPT" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/19b24967-709e-4548-887d-ba694263651c.png" alt="HeyGen" /></div>
+          </div>
+        </div>
+        <div class="tech-category-box">
+          <h3 class="tech-category-title">🎨 Design & Content Creation</h3>
+          <div class="tech-logos">
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/f7513f1a-547e-4660-8947-d7c979c7c2f7.png" alt="Midjourney" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/b969ae9a-71b0-43c5-9c75-ad3d2ac47c70.png" alt="CapCut" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/4946d957-2d96-49e4-8825-183e409b432f.png" alt="Canva" /></div>
+          </div>
+        </div>
+        <div class="tech-category-box">
+          <h3 class="tech-category-title">💼 Business Platforms</h3>
+          <div class="tech-logos">
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/a8227d64-6db5-4e3b-b6c3-7c4d360eeb35.png" alt="Zoho" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/d333afac-9b3e-4a68-bd16-2ca72183b50d.png" alt="Google Workspace" /></div>
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/ecca7d1a-72fe-407d-a423-02626e66acfc.png" alt="Shopify" /></div>
+          </div>
+        </div>
+        <div class="tech-category-box">
+          <h3 class="tech-category-title">💻 Development & CMS</h3>
+          <div class="tech-logos">
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/5d545331-aa50-4f79-a736-43d665c6233f.png" alt="WordPress" /></div>
+          </div>
+        </div>
+        <div class="tech-category-box">
+          <h3 class="tech-category-title">💬 Communication & Collaboration</h3>
+          <div class="tech-logos">
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/dff8397f-2d08-4a7c-9866-653cb0a4ba93.png" alt="Slack" /></div>
+          </div>
+        </div>
+        <div class="tech-category-box">
+          <h3 class="tech-category-title">📱 Social Media & Marketing</h3>
+          <div class="tech-logos">
+            <div class="tech-logo-item"><img src="https://cdn.abacus.ai/images/56f082b3-59eb-48ff-aa6a-c859650a56a3.png" alt="Social Media Platforms" /></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
