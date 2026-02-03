@@ -79,6 +79,17 @@
     .influencer-caption { padding: 1rem 1.5rem; background: #0f172a; }
     .influencer-caption h4 { color: #fff; font-size: 1rem; margin-bottom: 0.25rem; }
     .influencer-caption p { color: #94a3b8; font-size: 0.85rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+    .service-category { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 2rem; transition: all 0.3s; }
+    .service-category:hover { border-color: #38bdf8; transform: translateY(-5px); box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15); }
+    .service-category h3 { color: #fff; margin-bottom: 1.5rem; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+    .service-category ul { list-style: none; padding: 0; }
+    .service-category li { color: #94a3b8; padding: 0.6rem 0; padding-left: 1.5rem; position: relative; font-size: 0.95rem; line-height: 1.6; }
+    .service-category li::before { content: "✓"; position: absolute; left: 0; color: #38bdf8; font-weight: bold; }
+    .service-category li ul { margin-top: 0.5rem; }
+    .service-category li ul li { padding: 0.4rem 0; padding-left: 1.5rem; font-size: 0.9rem; }
+    .service-category li ul li::before { content: "•"; color: #64748b; }
+    .ai-badge { display: inline-block; background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); color: #fff; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; margin-left: 8px; }
     footer { border-top: 1px solid #1e293b; padding: 4rem 0; text-align: center; }
     .footer-content { margin-bottom: 2rem; }
     .footer-content h3 { color: #fff; margin-bottom: 1rem; font-size: 1.5rem; }
@@ -99,6 +110,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#tools">Tools</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#design">Design</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -184,7 +196,7 @@
           <div class="project-content">
             <h3>Custom ATS Development</h3>
             <p class="project-company">SGE Centre</p>
-            <p>Built a custom Applicant Tracking System from scratch using Abacus AI, streamlining recruitment workflows and reducing administrative overhead by 40%.</p>
+            <p>Built a custom Applicant Tracking System using Zoho Recruit, streamlining recruitment workflows and reducing administrative overhead by 40%.</p>
             <a href="https://careers.sgecentre.com/jobs/Careers" target="_blank" class="project-link">View Live Careers Portal →</a>
           </div>
           <div class="project-metrics">
@@ -202,32 +214,31 @@
           </a>
           <div class="project-content">
             <h3>HRIS Implementation</h3>
-            <p class="project-company">Multi-Country Operations</p>
-            <p>Deployed comprehensive HRIS across 4 countries (PH, SG, TH, MY), achieving 100% compliance and 30% cost reduction through process automation.</p>
+            <p class="project-company">Philippines Operations</p>
+            <p>Deployed comprehensive HRIS for PH using a deep agent achieving 100% compliance and 30% cost reduction through process automation.</p>
             <a href="https://hris.abacusai.app/" target="_blank" class="project-link">View Live HRIS Portal →</a>
           </div>
           <div class="project-metrics">
-            <span class="metric">4 Countries</span>
+            <span class="metric">Deep Agent Built</span>
             <span class="metric">100% Compliance</span>
             <span class="metric">30% Cost Savings</span>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-image-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; padding: 0;">
-            <img src="https://cdn.abacus.ai/images/9d4ae58e-aa9a-4752-80b3-d532f6585850.png" alt="Digital Onboarding Platform - Screen 1" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
-            <img src="https://cdn.abacus.ai/images/bea3b718-eb81-4a31-8e71-dcfa49fc3af2.png" alt="Digital Onboarding Platform - Screen 2" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
-            <img src="https://cdn.abacus.ai/images/ede4b25c-ed16-4749-b23f-7afaab0cf730.png" alt="Digital Onboarding Platform - Screen 3" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
+          <div class="project-image-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; padding: 0;">
+            <img src="https://cdn.abacus.ai/images/17a75eaa-141a-44d8-a4d1-416a04ba6b0a.png" alt="Digital Onboarding Platform - Onboarding Preview" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
+            <img src="https://cdn.abacus.ai/images/9c16c935-f8af-42c3-9f1d-ebb9df35dc68.png" alt="Digital Onboarding Platform - LMS Training" style="width: 100%; height: 220px; object-fit: cover; background: #ffffff;" />
           </div>
           <div class="project-content">
             <h3>Digital Onboarding Platform</h3>
             <p class="project-company">Regional Training Initiative</p>
-            <p>Designed and launched a digital onboarding system that reduced training costs by 20% and achieved 90% employee satisfaction scores.</p>
+            <p>Designed and launched a digital onboarding system with integrated LMS for training, reducing training costs by 20% and achieving 90% employee satisfaction scores.</p>
           </div>
           <div class="project-metrics">
+            <span class="metric">LMS Integrated</span>
             <span class="metric">20% Cost Savings</span>
             <span class="metric">90% Satisfaction</span>
-            <span class="metric">Digital First</span>
           </div>
         </div>
 
@@ -415,6 +426,82 @@
             <h3>Auto Detailing Service Menu</h3>
             <p class="design-tagline">Comprehensive pricing layout with vehicle illustrations, tiered packages, and clear add-on options.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Additional Services</h2>
+        <p class="section-subtitle">Comprehensive support services powered by AI and automation to streamline your business operations.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-category">
+          <h3>🧑‍💼 Virtual Assistant & Operations Support</h3>
+          <ul>
+            <li>Administrative support (email, calendar, data management)</li>
+            <li>Client communication and follow-ups</li>
+            <li>Documentation and compliance support</li>
+            <li>Process improvement and workflow coordination</li>
+          </ul>
+        </div>
+
+        <div class="service-category">
+          <h3>🤖 AI-Enhanced & Automation Services<span class="ai-badge">AI-POWERED</span></h3>
+          <ul>
+            <li>AI prompt creation and optimization</li>
+            <li>AI-assisted research and reporting</li>
+            <li>AI-generated content (emails, ads copy, product descriptions)</li>
+            <li>Workflow automation using AI tools (ChatGPT, Abacus AI, etc.)</li>
+            <li>Chatbot and AI support setup to improve efficiency</li>
+          </ul>
+        </div>
+
+        <div class="service-category">
+          <h3>🏢 Business & Legal Support (Philippines)</h3>
+          <ul>
+            <li>Trademark filing assistance and documentation support</li>
+            <li>Business registration assistance (DTI, SEC, BIR)</li>
+            <li>Compliance tracking and document preparation</li>
+            <li>Business process support for startups and SMEs</li>
+          </ul>
+        </div>
+
+        <div class="service-category">
+          <h3>🛒 E-commerce Customer Service</h3>
+          <ul>
+            <li>Customer support for Shopee, Lazada, and TikTok Shop</li>
+            <li>Order tracking, refunds, and returns handling</li>
+            <li>Inbox and live chat management</li>
+            <li>Customer satisfaction and issue resolution support</li>
+          </ul>
+        </div>
+
+        <div class="service-category">
+          <h3>📦 Logistics & Fulfillment Support (B2B & B2C)</h3>
+          <ul>
+            <li>Coordination with couriers and logistics partners</li>
+            <li>Shipment tracking and delivery follow-ups</li>
+            <li>B2B and B2C order fulfillment support</li>
+            <li>Handling delivery issues and escalations</li>
+          </ul>
+        </div>
+
+        <div class="service-category">
+          <h3>📈 Digital Marketing & Ads Support</h3>
+          <ul>
+            <li>Ads campaign setup and monitoring:
+              <ul>
+                <li>Shopee Ads</li>
+                <li>Lazada Ads</li>
+                <li>TikTok Ads</li>
+              </ul>
+            </li>
+            <li>Basic campaign optimization and performance tracking</li>
+            <li>Analytics reporting and insights</li>
+          </ul>
         </div>
       </div>
     </div>
